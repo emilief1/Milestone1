@@ -8,8 +8,8 @@
   <body>
     <header>
       <h1> BROWSERS </h1> <br>
-      <nav> 
-        <ul>  
+      <nav>
+        <ul> 
           <li> <a href="index.html">Home</a> </li> <br>
           <li> <a href="History.html">History of Browers</a> </li> <br>
           <li> <a href="Popular.html">The Most Popular Browsers Now</a> </li> <br>
@@ -17,8 +17,8 @@
           <li> <a href="Resourse.html">Resources</a> </li> <br>
         </ul>
       </nav>
-      <hr> 
-    <style>  
+      <hr>
+    <style>
       header {
         background-color: white;
         color: black;
@@ -90,7 +90,7 @@
         <img src="https://tse2.mm.bing.net/th/id/OIP.NzUkBZg1jPM04TyEa3oLRwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Microsoft Edge Logo" width="175" height="100">
       </div>
       <hr>
-    </section> // lists the questions and the answers that they can choose from
+    </section>
     <section id="Quiz">
     <h3> Quiz On the Information Above </h3>
     <form id="QuizForm">
@@ -114,12 +114,12 @@
     <p> 5. All web browsers are the same and there are no difference between any of them? </p>
       <input type="radio" name="q5" value="a"> True <br>
       <input type="radio" name="q5" value="b"> False <br>
-      <br> // this allows the user to click on the buttoms to either sumbit the quiz or redo it
-    <button type="button" onclick="submitQuiz()">Submit</button>
-    <button type="button" onclick="resetQuiz()">Restart</button>
+      <br>
+    <button type="button" onclick="SubmitQuiz()">Submit</button>
+    <button type="button" onclick="ResetQuiz()">Restart</button>
   </form>
   <div id="results" ></div>
-  <script> // this tells what the right answers are and creates the score for the quiz
+  <script>
     function submitQuiz() {
     let score = 0;
       if (document.querySelector('input[name="q1"]:checked')?.value === "c") score++;
